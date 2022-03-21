@@ -1,0 +1,39 @@
+.business {
+  padding-bottom: 94px;
+}
+
+.business__title {
+  margin-bottom: 50px;
+}
+
+.business-list {
+  display: flex;
+}
+
+.business-list__item {
+  position: relative;
+  & + & {
+    margin-left: 30px;
+  }
+}
+
+.business-list__item-text {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
