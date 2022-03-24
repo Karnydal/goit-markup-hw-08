@@ -1,5 +1,5 @@
 .input-mail {
-  width: 358px;
+  // width: 358px;
   height: 50px;
 
   padding-left: 16px;
@@ -17,6 +17,16 @@
 
   background-color: var(--hero-footer-background-color);
   color: rgba(255, 255, 255, 0.6);
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .form-field__input-wrap {

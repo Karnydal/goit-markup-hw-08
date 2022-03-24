@@ -38,6 +38,11 @@
 .footer-social {
   display: flex;
   fill: var(--white-color);
+
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
 }
 
 .footer-social .footer-social__link {
