@@ -1,0 +1,100 @@
+// Список контактов в хедере
+
+.contacts {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+
+    margin-left: auto;
+  }
+}
+
+// Элемент списка контактов
+
+.contacts__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
+}
+
+// Ссылки в элементе
+
+.contacts__link {
+  color: var(#757575);
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:hover,
+  &:focus {
+    color: var($accent-color);
+  }
+
+  @media screen and (min-width: 767px) {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  }
+}
+
+// Обёртка для иконок
+
+.contacts__icon {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
+}
+
+// Иконка почты
+
+.contacts__mail {
+  width: 16px;
+  height: 12px;
+
+  margin-right: 10px;
+
+  fill: currentColor;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 8px;
+  }
+}
+
+// Иконка телефона
+
+.contacts__phone {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+
+  fill: currentColor;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 8px;
+  }
+}

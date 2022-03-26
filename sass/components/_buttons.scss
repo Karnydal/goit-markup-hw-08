@@ -28,10 +28,50 @@
   }
 }
 
+// .footer-submit-btn {
+//   width: 200px;
+//   height: 50px;
+//   margin-left: 12px;
+
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.87;
+//   text-align: center;
+//   letter-spacing: 0.06em;
+//   cursor: pointer;
+
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   border: transparent;
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//   border-radius: 4px;
+
+//   background-color: var(--accent-color);
+//   color: var(--white-color);
+
+//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   &:hover,
+//   &:focus {
+//     background-color: #188ce8;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     border-radius: 4px;
+//     color: var(--white-color);
+//   }
+
+//   @media screen and (max-width: 767px) {
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+// }
+
 .footer-submit-btn {
   width: 200px;
   height: 50px;
-  margin-left: 12px;
+  margin: 0 0 0 12px;
+  max-width: 100%;
 
   font-weight: 700;
   font-size: 16px;
@@ -60,10 +100,8 @@
     border-radius: 4px;
     color: var(--white-color);
   }
-
-  @media screen and (max-width: 767px) {
-    margin-left: auto;
-    margin-right: auto;
+  @media screen and (max-width: 1199px) {
+    margin: 30px auto;
   }
 }
 

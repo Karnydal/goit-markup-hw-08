@@ -2,10 +2,32 @@
   display: flex;
   margin-left: auto;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 88px;
+  }
+}
+
+.nav-contacts {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .nav-contacts + .nav-contacts {
-  margin-left: 50px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+  }
 }
 
 .nav-contacts__link-contacts {
