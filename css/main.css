@@ -1118,33 +1118,93 @@ a {
   fill: var(--white-color);
 }
 
-.filters-list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+@media screen and (max-width: 767px) {
+  .filter-project {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
-.filters-list__item:not(:last-child) {
+@media screen and (max-width: 767px) {
+  .filters-list {
+    display: block;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filters-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 34px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filters-list {
+    margin-bottom: 50px;
+  }
+}
+
+.filters-list__item {
+  display: inline-block;
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
-.project {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .filters-list__item {
+    margin-right: 8px;
+    margin-bottom: 0;
+  }
 }
 
-.project-list {
-  display: flex;
-  margin-left: -30px;
-  margin-bottom: -30px;
-  flex-wrap: wrap;
+.filters-list__item:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .project {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project-list {
+    display: flex;
+    margin-left: -30px;
+    margin-bottom: -30px;
+    flex-wrap: wrap;
+  }
 }
 
 .project-list__item {
-  margin-left: 30px;
-  margin-bottom: 30px;
-  width: 370px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: var(--white-color);
+}
+
+@media screen and (max-width: 767px) {
+  .project-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project-list__item {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-list__item {
+    width: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .project-list__text-bellow {
@@ -1199,7 +1259,7 @@ a {
   left: 1px;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 63px 24px;
+  padding: 77px 24px;
   width: 100%;
   height: 100%;
   font-weight: 400;
@@ -1212,6 +1272,18 @@ a {
 
 .project-list__card:hover .project-list__card-text {
   transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project-list__card-text {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-list__card-text {
+    padding: 63px 24px;
+  }
 }
 
 .backdrop {
@@ -1241,15 +1313,21 @@ a {
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 500ms;
+  width: 100%;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
-@media screen and (mix-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .modal {
-    width: 528px;
-    min-height: 581px;
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
   }
 }
 
@@ -1265,10 +1343,17 @@ a {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-main-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .form-field-check {
@@ -1281,9 +1366,16 @@ a {
   align-items: center;
   justify-content: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 1.16;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-check-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-check-text span {
@@ -1314,11 +1406,18 @@ a {
 .modal-check-text__policy {
   margin-left: 5px;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-check-text__policy {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .input-mail {
@@ -1477,6 +1576,7 @@ a {
   top: 0;
   left: 0;
   padding: 48px 83px 48px 40px;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

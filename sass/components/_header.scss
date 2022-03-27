@@ -15,10 +15,7 @@
 
 .header-container {
   display: flex;
-
-  // @media screen and (max-width: 767px) {
-  //   height: 60px;
-  // }
+  
 }
 
 .header-nav {
@@ -32,11 +29,7 @@
     display: flex;
     align-items: center;
   }
-
-  // @media screen and (min-width: 1200px) {
-  //   display: flex;
-  //   align-items: center;
-  // }
+  
 }
 
 .header-nav__list {
@@ -59,9 +52,7 @@
   @media screen and (min-width: 768px) {
     margin-left: 50px;
   }
-  // @media screen and (min-width: 1200px) {
-  //   margin-left: 50px;
-  // }
+
 }
 
 .header-nav__link {

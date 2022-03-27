@@ -30,9 +30,14 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 500ms;
 
-  @media screen and (mix-width: 1200px) {
-    width: 528px;
-    min-height: 581px;
+  width: 100%;
+
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
   }
 
   background-color: var(--white-color);
@@ -54,10 +59,15 @@
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-main-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .form-field-check {
@@ -72,9 +82,15 @@
   justify-content: center;
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
+
+  font-size: 12px;
+  line-height: 1.16;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-check-text span {
@@ -105,9 +121,14 @@
 .modal-check-text__policy {
   margin-left: 5px;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--accent-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }

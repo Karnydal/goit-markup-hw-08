@@ -1,9 +1,40 @@
-.filters-list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+.filter-project {
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
-.filters-list__item:not(:last-child) {
+.filters-list {
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-bottom: 40px;
+    // flex-wrap: wrap;
+    // flex-direction: row;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 34px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.filters-list__item {
+  display: inline-block;
   margin-right: 8px;
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+    margin-bottom: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
 }
