@@ -1,4 +1,8 @@
 .features {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .container {
     @media screen and (min-width: 480px) and (max-width: 767px) {
       width: 450px;
@@ -19,10 +23,12 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
+    margin-bottom: -30px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: -30px;
+    margin-bottom: -30px;
   }
 }
 
@@ -34,9 +40,10 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc(100% / 2 - 30px);
     margin-left: 30px;
-    &:not(:nth-last-child(n + 3)) {
-      margin-bottom: 0;
-    }
+    margin-bottom: 30px;
+    // &:not(:nth-last-child(n + 3)) {
+    //   margin-bottom: 0;
+    // }
   }
   @media screen and (min-width: 1200px) {
     width: calc(100% / 4 - 30px);
@@ -52,6 +59,10 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .features-list__bg {
@@ -67,7 +78,7 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     margin-bottom: 30px;
-    width: 354px;
+    max-width: 354px;
     height: 120px;
     background-color: var(--seconr-bgc);
     border-radius: 4px;
@@ -78,7 +89,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     margin-bottom: 30px;
-    width: 270px;
+    max-width: 270px;
     height: 120px;
     background-color: var(--seconr-bgc);
     border-radius: 4px;

@@ -14,7 +14,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     font-weight: 700;
     font-size: 28px;
     line-height: 1.17;
@@ -28,7 +28,9 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-left: -30px;
-  
+  @media screen and (min-width: 1200px) {
+    margin-bottom: -30px;
+  }
 }
 
 .partners-list__image {
@@ -55,7 +57,6 @@
 
   @media screen and (min-width: 1200px) {
     width: calc(100% / 6 - 30px);
-    
   }
 }
 
